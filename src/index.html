@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/png" href="./assets/icon_2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Runde:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>xoxo.reo</title>
+</head>
+<body class = "main-body">
+    
+<div class="max-w-4xl mx-auto px-4 py-8 main-body">
+    
+    <section class = "mb-4 fade-up delay-100">
+        
+        <div class = "flex flex-row items-center gap-4 md:gap-4 p-4 rounded-lg  header-section">
+            <img src="./assets/Image.jfif" alt="Profile Picture" class="rounded-lg w-40 h-40 md:w-40 md:h-40 object-cover flex-shrink-0">
+            <div class="flex-1 min-w-0">
+                <!-- Header -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-lg md:text-2xl font-bold truncate div-title">Jerome Bago</h1>
+                            <!-- Verified Icon -->
+                                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" aria-label="Verified user"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" fill="#E6A8D7"></path>
+                                </svg>
+                    </div>
+
+                    <!-- Theme Toggle 
+                    <button class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-300 hover:bg-gray-400">
+                        <div class="absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white"></div>
+                    </button>-->
+                </div>
+
+                    <!-- Location -->
+                    <p class="text-xs md:text-sm text-foreground/70 mt-0.5 flex items-center gap-1 text-white">
+                        <svg class="w-3 h-3 md:w-3.5 md:h-3.5 flex-shrink-0" fill="#E6A8D7" stroke="#2d1f29" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span class="truncate">Metro Manila, Philippines</span>
+                    </p>
+
+                    <!-- Roles -->
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="text-sm font-semibold text-white">
+                            An Information Technology Student <span class="text-gray-400"><!--\--></span>
+                        </p>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="space-y-2 mt-4">
+                        <div class="flex gap-2">
+
+                            <!-- Email -->
+                            <a href="mailto:jeromebago17@gmail.com"
+                                class="inline-flex items-center justify-center rounded-lg email-btn px-3 py-1 text-xs flex-1 btn-header">
+                                <i class="fas fa-envelope" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-xs text-[#2d1f29] font-medium ml-2">Send an Email</span>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/jeromebago/" target = "_blank" class="inline-flex items-center rounded-lg justify-center contact-btn px-3 py-1 text-xs flex-1 btn-header">
+                                <i class="fas fa-network-wired" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-xs text-gray-200 font-medium ml-2">Let's Connect →</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Resume -->
+                        <a href = "./assets/Resume/Resume_Jerome Bago .pdf" download="Jerome_Bago_Resume.pdf">
+                            <div class="flex items-center justify-center rounded-lg download-btn text-xs px-2 py-1 btn-header">
+                                <i class="fas fa-download" style="color: rgb(45, 31, 41);"></i>
+                                <span class="text-xs text-[#2d1f29] font-medium ml-2">Download My Resume</span>
+                            </div>
+                        </a>
+                    </div>
+        </div>
+    </section>
+
+    <!--Skill, Experience, Education-->
+    <section class="flex flex-col md:flex-row gap-4 mt-4 second-section">
+
+        <div class="flex flex-col w-full md:w-4/6 gap-4">
+            <div class="flex flex-col gap-2 flex-1 rounded-lg p-4 fade-up delay-200 about-me-section">
+
+                <div class="flex items-center gap-2 mr-5">
+                    <i class="fas fa-globe-asia" style="color: rgb(230, 168, 215);"></i>
+                    <h2 class="text-lg font-bold div-title">Hello, World</h2>
+                </div>  
+
+                <p class="text-justify paragraph-text">
+                    I’m an IT student who sees technology as a runway. I turn ideas into interfaces that are functional, intuitive, and visually captivating. Bold, curious, and unstoppable, I’m always learning, experimenting, and leveling up.
+                    <br> <br>
+                    Away from the screen, you’ll find me with iced matcha in hand, immersed in a good book or binge-watching the latest series. These moments recharge my creativity and sharpen my problem-solving skills.
+                    <br> <br>
+                    And yes, I live by Elle Woods' iconic motto: <span class = "div-title"><i>"What, like it's hard?"</i></span> — a reminder that every challenge is another chance to shine. With creativity, determination, and a touch of <span class = "div-title"><i>glamour</i></span>, I embrace technology as both discipline and art.
+                </p>
+    
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1 bg-white-100 rounded-lg p-4 fade-up delay-300 tech-stack-section">
+                <!-- Header -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2 mr-5">
+                        <i class="fas fa-code" style="color: rgb(230, 168, 215);"></i>
+                        <h2 class="text-lg font-bold div-title">Tech Stack</h2>
+                    </div>  
+
+                    <a href="./additional_src/tech_stack.html" class="text-xs text-foreground/70 hover:text-foreground flex items-center gap-1 transition-colors text-white">
+                        View All
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-4">
+                    <!-- Frontend -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">HTML</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">CSS</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">JavaScript</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">JQuery</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">Bootstrap</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">Tailwind CSS</p>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div>
+                    <h3 class="text-sm font-semibold mb-2 text-white">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">C#</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">PHP</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">SQL</p>
+                        </div>
+                    </div>
+
+                    <!-- Designing -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Database</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">MySQL</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">myPhpAdmin</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">SQL</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">XAMPP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="flex flex-col flex-1 rounded-lg p-4 fade-up delay-400 projects-section gap-2">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2 mr-5">
+                            <i class="fas fa-folder-open" style="color: rgb(230, 168, 215);"></i>
+                            <h2 class="text-lg font-bold div-title">Recent Projects</h2> 
+                        </div>
+
+                        <a href="./additional_src/projects.html" class="text-xs text-foreground/70 hover:text-foreground flex items-center gap-1 transition-colors text-white">
+                            View All
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex flex-col md:flex-row gap-4">
+
+                        <div class = "flex flex-col w-full md:w-3/6 gap-4">
+                            <div class = space-y-2>
+
+                            <button data-id="1" class="project-boxes flex items-center w-full p-2 gap-2 cert-project-boxes badge cursor-pointer">
+                                <i class="fas fa-paw" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-sm text-white font-medium ml-2">PawPatrol: Pet Clinic</span>
+                            </button>
+                            <!-- add a new project here for col 1-->
+                            </div>
+                        </div>
+
+                        <div class = "flex flex-col w-full md:w-3/6 gap-4">
+                            <div class = space-y-2>
+
+                            <button data-id="2" class="project-boxes flex items-center w-full p-2 gap-2 cert-project-boxes badge cursor-pointer">
+                                <i class="fa-solid fa-book" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-sm text-white font-medium ml-2">Sandro's Nook</span>
+                            </button>
+                            <!-- add a new project here for col 2-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="flex flex-col w-full md:w-2/6 gap-4">
+
+            <div class="flex flex-col flex-1 h-150 rounded-lg p-4 overflow-hidden fade-up delay-100 experience-section">
+                <div class="flex flex-col gap-2 w-full">
+                    <div class="flex items-center gap-2 mr-5">
+                        <i class="fas fa-briefcase" style="color: rgb(230, 168, 215);"></i>
+                        <h2 class="text-lg font-bold div-title">Experience</h2>
+                    </div>  
+
+                    <ul>
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-[rgb(230,168,215)]" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8" />
+                                </svg>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Full-Stack Developer Intern</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Conception Business Service Inc</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2026</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-[rgb(230,168,215)]" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </div>
+
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">BS Information Technology</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Pamantasan ng Lungsod ng Muntinlupa</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2026</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="7.25" fill="#2d1f29" stroke="rgb(230,168,215)" stroke-width="1.5" class="group-hover:fill-[rgb(230,168,215)] transition-colors duration-300"/>
+                                    </svg> 
+                                </div>
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Agent-In Cust Svc 2</p>
+                                    <p class="mt-1 text-gray-400 text-xs">ibex.</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2024</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="7.25" fill="#2d1f29" stroke="rgb(230,168,215)" stroke-width="1.5" class="group-hover:fill-[rgb(230,168,215)] transition-colors duration-300"/>
+                                    </svg> 
+                                </div>
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Hello, World!</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Wrote my First Code</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2022</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1 rounded-lg p-4 academic-section fade-up delay-200 shadow-sm">
+                <div class="flex items-center gap-2 mr-5">
+                    <i class="fas fa-graduation-cap" style="color: rgb(230, 168, 215);"></i>
+                    <h2 class="text-lg font-bold div-title">Academic</h2>
+                </div>  
+
+                    <div class="space-y-6">
+                        <!-- COLLEGE -->
+                        <div>
+                            <!-- Title + Year -->
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-sm text-white font-medium">BS Information Technology</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2022 – Present</span>
+                            </div>
+
+                            <p class="mt-1 text-gray-400 text-xs mt-1">Pamantasan ng Lungsod ng Muntinlupa</p>
+                        </div>
+
+                        <!-- SENIOR HIGH -->
+                        <div>
+                            <!-- Title + Year -->
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-sm text-white font-medium">Science, Technology, Engineering, and Mathematics (S.T.E.M)</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2020 – 2022</span>
+                            </div>
+
+                            <p class="mt-1 text-gray-400 text-xs mt-1">Muntinlupa National High School</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Certificates and Leadership-->
+    <section class = "flex flex-col md:flex-row gap-4 mt-4">
+
+        <div class = " flex flex-col w-full md:w-3/6 gap-2 rounded-lg Leadership-section p-4 fade-up delay-100">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-user-tie" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Leadership & Roles</h2>
+            </div>  
+
+            <ul class="space-y-2 text-sm">
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">College Student Council Secretary</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2025 – Present</span>
+                </li>
+
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">Class Representative</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2023 – Present</span>
+                </li>
+
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">College Student Council Business Manager 1</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2024 – 2025</span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class = "flex flex-col w-full md:w-3/6 gap-2 rounded-lg Certificates-section p-4 fade-up delay-200">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-certificate" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Certificates</h2>
+            </div>  
+
+            <div class ="space-y-2 text-sm">
+
+                <a href = "./assets/Certificate from Y4LS 2025 (signature hidden for privacy).png" target="_blank" class="flex items-start gap-2 ">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Y4LS 2025: The Builders and Shapers of a New, AI-Integrated World</span>
+                        <span class="text-xs text-gray-400">Issued by John Clements Consultants, Inc.</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Statistics and Contacs-->
+    <section class = "flex flex-col md:flex-row gap-4 mb-8 mt-4">
+
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg statistics-section p-4 fade-up delay-300">
+            <!-- Header -->
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-chart-line" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Statistics</h2>
+            </div>  
+            <!-- content -->
+            <div class="flex flex-col md:flex-row w-full gap-4">
+
+                <div class="flex flex-col w-full md:w-1/4 gap-4">
+                    <ul class="space-y-2 text-sm ">
+                        <li class="flex items-start justify-between gap-4">
+                            <h1 class="text-sm text-gray-400 font-base">1+</h1>
+                        </li>
+                        <li class="flex items-start justify-between gap-4">
+                            <h1 class="text-sm text-gray-400 font-base">1.1K+</h1>
+                        </li>
+                        <li class="flex items-start justify-between gap-4">
+                            <h1 class="text-sm text-gray-400 font-base">500K+</h1>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col w-full md:w-3/4 gap-4">
+                    <ul class="space-y-2 text-sm ">
+                        <li class="flex items-start justify-between gap-4">
+                            <span class="text-sm text-white whitespace-nowrap">Projects</span>
+                        </li>
+                        <li class="flex items-start justify-between gap-4">
+                            <span class="text-sm text-white whitespace-nowrap">Cups of Iced Matcha</span>
+                        </li>
+                        <li class="flex items-start justify-between gap-4">
+                            <h1 class="text-sm text-white font-base">Lines of Code</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg socials-section p-4 fade-up delay-400">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-share-alt" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Socials</h2>
+            </div>  
+            <div class ="space-y-2 text-sm">
+
+                <a href = "https://www.linkedin.com/in/jeromebago/" target="_blank" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-linkedin" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">LinkedIn</span>
+                    </div>
+                </a>
+
+                <a href = "https://github.com/seasunreo" target="_blank" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-github" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">Github</span>
+                    </div>
+                </a>
+                <a href = "https://gitlab.com/xoxoreo" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-gitlab" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">GitLab</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg additional-section p-4 fade-up delay-500">
+            <div class ="space-y-2 text-sm">
+
+                <a href = "mailto:bjeromebago17@gmail.com" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Send me an email</span>
+                        <span class="text-xs text-gray-400">jeromebago17@gmail.com</span>
+                    </div>
+                </a>
+                
+                <a href = "https://www.linkedin.com/in/jeromebago/" target="_blank" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">More About Me</span>
+                        <span class="text-xs text-gray-400">linkedin.com/in/jeromebago</span>
+                    </div>
+                </a>
+
+                <a href = "./assets/Resume/Resume_Jerome Bago .pdf" target="_blank" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Read more About Me</span>
+                        <span class="text-xs text-gray-400">Download my Resume</span>
+                    </div>
+                </a>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8 mt-4 footer-section">
+        <div class="flex flex-row items-center justify-center gap-2 mr-5 mt-5">
+            <p class="text-sm text-gray-400"> &copy; 2026 Jerome Bago. All rights reserved.</p>
+        </div>  
+    </section>
+
+    <!--Modal for Recent Projects-->
+    <dialog id="dialog" class="p-0 rounded-xl">
+        <div class="fixed inset-0 flex items-center justify-center bg-black/60 p-4">
+
+            <div id="modal-panel" class="relative w-[100vh] max-w-2xl h-[500px] max-h-[90vh] rounded-xl overflow-hidden shadow-2xl bg-cover bg-center flex items-center justify-center modal-control">
+                <div class="absolute inset-0 modal-overlay"></div>
+
+                    <button id="modal-close" onclick="closeModal()" class="absolute top-4 right-4 z-20 px-4 py-2 text-xl">
+                        <i class="fa-solid fa-xmark" style="color: rgb(230, 168, 215);"></i>
+                    </button>
+
+                    <div class="flex flex-col z-10 text-center justify-center p-6 text-white h-full w-full">
+                        <div class ="flex flex-col items-center justify-center gap-2 modal-content">
+                            <h3 id="dialog-title" class="text-2xl font-bold div-title"></h3>
+                            <p id="dialog-desc" class="mt-2 text-base text-white/80 text-center px-24"></p>
+
+                            <a id="github-btn" target="_blank" rel="noopener noreferrer" class="mt-6 px-4 py-2 rounded-md">
+
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Check on GitHub</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </dialog>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

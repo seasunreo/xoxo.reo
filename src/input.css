@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/* Utilities → small single-purpose classes */
+@layer utilities {
+
+  ::selection {
+    background-color: rgb(230, 168, 215);
+    color: #2d1f29; 
+  }
+
+  .badge {
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transform: translateZ(0);
+  }
+
+  .badge:hover {
+    background: rgba(230, 168, 215, 0.12);
+    border-color: rgba(230, 168, 215, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .btn-header {
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transform: translateZ(0);
+  }
+  .btn-header:hover {
+    color: white;
+    background: rgba(230, 168, 215, 0.12);
+    border-color: rgba(230, 168, 215, 0.4);
+    transform: translateY(-1.5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .btn-header:hover i{
+    color: #E6A8D7 !important;
+  }
+
+  .btn-header:hover span {
+    color: white !important;
+  }
+
+  .tech-stack-section,
+  .about-me-section,
+  .projects-section,
+  .experience-section,
+  .academic-section,
+  .header-section,
+  .Leadership-section,
+  .Certificates-section,
+  .statistics-section,
+  .socials-section,
+  .additional-section {
+    border: 1px solid #E6A8D7;
+  }
+
+  .footer-section {
+    border-top: #E6A8D7 1px solid;
+  }
+
+  .div-title {
+    color: #E6A8D7;
+  }
+
+  .div-text {
+    color: #F8F0F2;
+    font-size: 12px;
+  }
+
+  .paragraph-text {
+    color: #F8F0F2;
+    font-size: 14px;
+  }
+
+  .tech-stack-boxes,
+  .project-box {
+    border: 1px solid #F8F0F2;
+    border-radius: 4px;
+  }
+
+  .cert-project-boxes {
+    background-color: #4b3445;
+  }
+
+  .main-body {
+    background-color: #2d1f29;
+  }
+
+  .contact-btn {
+    background-color: gray;
+    color: white;
+  }
+
+  .email-btn {
+    background-color: white;
+    color: #2d1f29;
+    transition: all 0.2s;
+  }
+
+  .download-btn {
+    background-color: #E6A8D7;
+    color: #2d1f29;
+    transition: all 0.2s;
+  }
+
+  .text-primary-primary {
+    font: 'OpenRunde', sans-serif;
+    font-size: 13px;
+    font-weight: 490;
+  }
+
+  .text-primary-secondary {
+    font: 'OpenRunde', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .text-primary-headline {
+    font: 'OpenRunde', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF69B4;
+  }
+
+  .box-pink {
+    font: 'OpenRunde', sans-serif;
+    background-color: #FF69B4;
+    color: black;
+  }
+
+ @keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+/* Animation delay classes */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-900 { animation-delay: 0.9s; }
+.delay-1000 { animation-delay: 1.0s; }
+}
+
+/* Components → reusable UI elements like buttons */
+@layer components {
+  /* Primary pink button */
+  .btn-primary {
+    
+    border: 2px solid #FF69B4;
+    background-color: #FF69B4;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: transparent;
+    color: #FF69B4;
+  }
+
+  /* Secondary pink button */
+  .btn-pink {
+    
+    transition: all 0.2s;
+  }
+
+  .btn-pink:hover {
+    background-color: #FF69B4;
+    color: white;
+  }
+
+  .btn-secondary {
+    box-shadow: 0.3px 0.3px 0.3px black;
+    background-color: transparent;
+    transition: all 0.2s;
+  }
+
+  .project-container {
+    background-color: #4b3445;
+    color:#F8F0F2
+  }
+
+  .modal-overlay{
+    background: #2d1f29;
+    opacity: 0.9;
+  }
+
+  .modal-control{
+    border: 2px solid #E6A8D7;
+  }
+
+  #github-btn {
+    background-color: #2d1f29;
+    color: #E6A8D7;
+  }
+
+  #github-btn i {
+  color: #E6A8D7;
+}
+
+  #github-btn:hover{
+    background-color: #E6A8D7;
+    color: #2d1f29;
+  }
+
+  #github-btn:hover i {
+    color: #2d1f29 !important;
+  }
+
+}
