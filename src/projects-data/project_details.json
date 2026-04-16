@@ -3,14 +3,14 @@
     "id": 1,
     "title": "PawPatrol: Pet Clinic",
     "description": "PawPatrol: Pet Clinic is a demo website built with HTML and CSS that showcases a modern, user-friendly way to streamline pet clinic appointment booking for greater convenience and accessibility.",
-    "image": "./assets/projects/PawPatrol_Pet Clinic.png",
+    "image": "/assets/projects/PawPatrol_Pet Clinic.png",
     "github": "https://github.com/seasunreo/PawPatrol-Pet-Clinic"
   },
   {
     "id": 2,
     "title": "Sandro's Nook: Book and Cafe Store",
     "description": "An IoT-powered smart transaction system featuring QR-based checkout and automated inventory tracking.",
-    "image": "./assets/projects/Sandros_Nook_Website.png",
+    "image": "/assets/projects/Sandros_Nook_Website.png",
     "github": "https://github.com/seasunreo"
   }
 ]
