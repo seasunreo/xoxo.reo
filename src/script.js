@@ -1,6 +1,5 @@
 ﻿let projects = [];
 
-// LOAD JSON
 fetch('projects-data/project_details.json')
   .then(res => res.json())
   .then(data => {
@@ -8,18 +7,14 @@ fetch('projects-data/project_details.json')
   })
   .catch(err => console.error(err));
 
-
-// CLICK HANDLER (FIXED)
 document.addEventListener("click", (e) => {
   const btn = e.target.closest(".project-boxes");
   if (!btn) return;
 
-  const id = Number(btn.dataset.id); // ✅ FIX HERE
+  const id = Number(btn.dataset.id);
   openModal(id);
 });
 
-
-// OPEN MODAL
 function openModal(id) {
   const dialog = document.getElementById("dialog");
   const panel = document.getElementById("modal-panel");
@@ -43,8 +38,6 @@ function openModal(id) {
   dialog.showModal();
 }
 
-
-// CLOSE MODAL
 function closeModal() {
   document.getElementById("dialog")?.close();
 }
