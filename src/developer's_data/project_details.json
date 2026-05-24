@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Sandro's Nook: Book and Cafe Store",
+    "creation": "2026",
+    "description": "A cozy café and bookstore experience powered by smart technology. Browse books, discover café favorites, and enjoy a seamless QR-based ordering and checkout system with a warm, inviting UI. Features smart inventory management and AI-powered recommendations for a more personalized customer experience.",
+    "tech": ["JavaScript", "PHP", "MySQL", "HTML", "CSS", "Responsive", "Internet of Things", "VS Studio Code"],
+    "icon": "fas fa-book",
+    "github": "https://github.com/seasunreo/Sandro-s-Nook-Book-and-Cafe-Store"
+  },
+  {
+    "id": 2,
+    "title": "PawPatrol: Pet Clinic",
+    "creation": "2023",
+    "description": "A modern pet care management system designed for clinics and pet owners. Manage appointments, pet records, vaccinations, and billing through a clean and user-friendly interface, making veterinary care more organized, efficient, and accessible.",
+    "tech": ["HTML", "CSS Tailwind", "Responsive", "VS Studio Code"],
+    "icon": "fas fa-paw",
+    "github": "https://github.com/seasunreo/PawPatrol-Pet-Clinic"
+  },
+  {
+    "id": 3,
+    "title": "Chapter Notes",
+    "creation": "2024",
+    "description": "A mobile book-tracking application built with Java and XML for readers who want to organize and monitor their reading journey. Users can manage their to-be-read list, track completed books, and rate their reading experience through a clean and user-friendly interface designed for efficient note-taking and reading management.",
+    "tech": ["Java", "XML", "SQLite", "Android Studio"],
+    "icon": "fa-solid fa-pen-to-square",
+    "github": "https://github.com/seasunreo/Chapter-Notes"
+  },
+  {
+    "id": 4,
+    "title": "Midnight Coffee",
+    "creation": "2022",
+    "description": "Midnight Coffee is a café-inspired front-end website concept for a bookstore café where users can browse available books and explore the shop’s menu through a clean and cozy interface inspired by late-night coffee shop aesthetics.",
+    "tech": ["CSS", "HTML", "JavaScript", "VS StudioCode"],
+    "icon": "fas fa-star",
+    "github": "fa-solid fa-moon"
+  }
+]
