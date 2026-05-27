@@ -5,9 +5,9 @@
     "items": [
       { "name": "HTML", "icon": "fab fa-html5", "level": "Proficient" },
       { "name": "CSS", "icon": "fab fa-css3-alt", "level": "Proficient" },
-      { "name": "JavaScript", "icon": "fab fa-js", "level": "Strong" },
-      { "name": "jQuery", "icon": "fas fa-code", "level": "Comfortable" },
-      { "name": "Bootstrap", "icon": "fab fa-bootstrap", "level": "Comfortable" },
+      { "name": "JavaScript", "icon": "fab fa-js", "level": "Learning" },
+      { "name": "jQuery", "icon": "fas fa-code", "level": "Learning" },
+      { "name": "Bootstrap", "icon": "fab fa-bootstrap", "level": "Learning" },
       { "name": "Tailwind CSS", "icon": "fas fa-wind", "level": "Comfortable" }
     ]
   },
@@ -15,9 +15,9 @@
     "label": "Backend",
     "icon": "fas fa-server",
     "items": [
-      { "name": "C#", "icon": "fas fa-hashtag", "level": "Comfortable" },
-      { "name": "PHP", "icon": "fab fa-php", "level": "Comfortable" },
-      { "name": "SQL", "icon": "fas fa-layer-group", "level": "Strong" },
+      { "name": "C#", "icon": "fas fa-hashtag", "level": "Learning" },
+      { "name": "PHP", "icon": "fab fa-php", "level": "Learning" },
+      { "name": "SQL", "icon": "fas fa-layer-group", "level": "Learning" },
       { "name": "Java", "icon": "fa-brands fa-java", "level": "Familiar" },
       { "name": "REST APIs", "icon": "fas fa-exchange-alt", "level": "Familiar"}
     ]
@@ -26,7 +26,7 @@
     "label": "Database",
     "icon": "fas fa-database",
     "items": [
-      { "name": "MySQL", "icon": "fa-solid fa-database", "level": "Strong" },
+      { "name": "MySQL", "icon": "fa-solid fa-database", "level": "Comfortable" },
       { "name": "Microsoft SQL Server", "icon": "fa-solid fa-database", "level": "Comfortable" },
       { "name": "SQLite", "icon": "fa-solid fa-database", "level": "Familiar" }
     ]
@@ -35,7 +35,7 @@
     "label": "Design & Prototyping",
     "icon": "fa-regular fa-object-group",
     "items": [
-      { "name": "Figma", "icon": "fa-brands fa-figma", "level": "Comfortable" },
+      { "name": "Figma", "icon": "fa-brands fa-figma", "level": "LEarning" },
       { "name": "Canva", "icon": "fa-solid fa-sliders", "level": "Proficient" },
       { "name": "Adobe Photoshop", "icon": "fa-solid fa-sliders", "level": "Proficient" }
     ]
@@ -105,7 +105,7 @@
       { "name": "Organizational & Project Management", "icon": "fa-solid fa-user-gear", "level": "Proficient" },
       { "name": "Communication & Decision-Making", "icon": "fa-solid fa-user-gear", "level": "Proficient" },
       { "name": "Event Planning & Coordination", "icon": "fa-solid fa-user-gear", "level": "Proficient" },
-      { "name": "Task Prioritization", "icon": "fa-solid fa-user-gear", "level": "Comfortable" },
+      { "name": "Task Prioritization", "icon": "fa-solid fa-user-gear", "level": "Strong" },
       { "name": "Organizational & Documentation Management", "icon": "fa-solid fa-user-gear", "level": "Strong" }
       
     ]
