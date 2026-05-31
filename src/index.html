@@ -1,481 +1,538 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/png" href="./assets/reo_tab_logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/png" href="/assets/icon_2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Runde:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>xoxo.reo</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&family=Runde:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-dot" id="cursorDot"></div>
+</head>
+<body class = "main-body">
+    
+<div class="max-w-4xl mx-auto px-4 py-8 main-body">
+    
+    <section class = "mb-4 fade-up delay-100">
+        
+        <div class = "flex flex-row items-center gap-4 md:gap-4 p-4 rounded-lg  header-section">
+            <img src="./assets/Image.jfif" alt="Profile Picture" class="rounded-lg w-40 h-40 md:w-40 md:h-40 object-cover flex-shrink-0">
+            <div class="flex-1 min-w-0">
+                <!-- Header -->
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-lg md:text-2xl font-bold truncate div-title">Jerome Bago</h1>
+                            <!-- Verified Icon -->
+                                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0" aria-label="Verified user"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" fill="#E6A8D7"></path>
+                                </svg>
+                    </div>
 
-    <!-- NAV -->
-    <nav class="fixed inset-x-0 top-0 z-50 py-[14px] px-5 bp900:px-[40px] flex items-center justify-between">
-      <div class="nav-logo flex items-end gap-2 font-['Bebas_Neue',sans-serif] text-[26px] tracking-[0.1em] text-[var(--white)] leading-none">
-        <img src="./assets/reo_tab_logo.png" alt="xoxo.reo" class="w-8 h-8 object-contain" />
-        <div class="leading-none">xoxo<span>.reo</span></div>
-      </div>
-    </nav>
+                    <!-- Theme Toggle 
+                    <button class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-300 hover:bg-gray-400">
+                        <div class="absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white"></div>
+                    </button>-->
+                </div>
 
-    <!-- HERO -->
-    <section class="hero min-h-screen relative flex flex-col items-center justify-center overflow-hidden text-center">
-      <div class="hero-bg absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_40%,_#2a1f10_0%25,_#272727_70%25)]"></div>
-        <div class="ring ring-lg"></div>
-        <div class="ring ring-md"></div>
-        <div class="ring ring-sm"></div>
-      <div id="particles" class="absolute inset-0 overflow-hidden"></div>
+                    <!-- Location -->
+                    <p class="text-xs md:text-sm text-foreground/70 mt-0.5 flex items-center gap-1 text-white">
+                        <svg class="w-3 h-3 md:w-3.5 md:h-3.5 flex-shrink-0" fill="#E6A8D7" stroke="#2d1f29" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span class="truncate">Metro Manila, Philippines</span>
+                    </p>
 
-      <div class="hero-inner flex flex-col bp900:flex-row items-center justify-center w-full max-w-[1100px] mx-auto gap-[24px] px-5">
+                    <!-- Roles -->
+                    <div class="flex items-center justify-between mt-2">
+                        <p class="text-sm font-semibold text-white">
+                            An Information Technology Student <span class="text-gray-400"><!--\--></span>
+                        </p>
+                    </div>
 
-        <div class="pokeball-hero w-full bp900:w-1/2 flex justify-center" id="pokeball">
-          <svg class="pokeball-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <clipPath id="tc"><rect x="0" y="0" width="100" height="50"/></clipPath>
-              <clipPath id="bc"><rect x="0" y="50" width="100" height="50"/></clipPath>
-            </defs>
-            <g clip-path="url(#tc)">
-              <circle cx="50" cy="50" r="48" fill="#C9A07A" stroke="#272727" stroke-width="2"/>
-            </g>
-            <g clip-path="url(#bc)">
-              <circle cx="50" cy="50" r="48" fill="#F8F0FF" stroke="#272727" stroke-width="2"/>
-            </g>
-            <line x1="2" y1="50" x2="98" y2="50" stroke="#272727" stroke-width="3"/>
-            <circle cx="50" cy="50" r="14" fill="#272727" stroke="#272727" stroke-width="2"/>
-            <circle cx="50" cy="50" r="9" fill="#D4AA7D" stroke="#272727" stroke-width="1.5"/>
-            <circle cx="50" cy="50" r="5" fill="white"/>
-            <ellipse cx="36" cy="30" rx="7" ry="4.5" fill="rgba(255,255,255,0.2)" transform="rotate(-20 36 30)"/>
-          </svg>
+                    <!-- Actions -->
+                    <div class="space-y-2 mt-4">
+                        <div class="flex gap-2">
+
+                            <!-- Email -->
+                            <a href="mailto:jeromebago17@gmail.com"
+                                class="inline-flex items-center justify-center rounded-lg email-btn px-3 py-1 text-xs flex-1 btn-header">
+                                <i class="fas fa-envelope" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-xs text-[#2d1f29] font-medium ml-2">Send an Email</span>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/jeromebago/" target = "_blank" class="inline-flex items-center rounded-lg justify-center contact-btn px-3 py-1 text-xs flex-1 btn-header">
+                                <i class="fas fa-network-wired" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-xs text-gray-200 font-medium ml-2">Let's Connect →</span>
+                            </a>
+
+                        </div>
+
+                        <!-- Resume -->
+                        <a href = "./assets/Resume/Resume_Jerome Bago.pdf" download="Jerome_Bago_Resume.pdf">
+                            <div class="flex items-center justify-center rounded-lg download-btn text-xs px-2 py-1 btn-header">
+                                <i class="fas fa-download" style="color: rgb(45, 31, 41);"></i>
+                                <span class="text-xs text-[#2d1f29] font-medium ml-2">Download My Resume</span>
+                            </div>
+                        </a>
+                    </div>
         </div>
-
-        <div class="hero-text w-full bp900:w-1/2 text-center bp900:text-left">
-          <span class="hero-eyebrow relative z-20 opacity-0 inline-block mb-[10px]">Information Technology Student • Metro Manila, PH</span>
-          <h1 class="hero-title">
-            <span class="solid">JEROME</span>
-            <span class="outline">reo</span>
-            <span class="solid">BAGO</span>
-          </h1>
-          <p class="hero-sub paragraph-text">Hi! I'm Jerome and I kinda build and develop some... <i>stuff</i>.</p>
-        </div>
-      </div>
-
-    <!-- HERO CHIPS -->
-      <div class="hero-chips relative z-20 opacity-0 mt-[20px] flex flex-wrap justify-center bp900:justify-start gap-[10px]">
-        <span class="chip chip-pink">Front-End Developer</span>
-        <span class="chip chip-dark">Full-Stack Developer</span>
-        <span class="chip chip-pink">Web Developer</span>
-      </div>
-
-      <div class="scroll-hint absolute bottom-[28px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-[6px] text-[11px] uppercase tracking-[0.2em] opacity-0">
-        <span>Scroll</span>
-        <div class="scroll-arrow inline-block w-[18px] h-[18px] border-r-[2px] border-b-[2px] border-[var(--gray)] rotate-45"></div>
-      </div>
     </section>
 
-    <!-- TYPES STRIP -->
-    <div class="types-strip bg-[var(--surface)] py-[24px] overflow-hidden border-y border-[var(--border)]">
-      <div class="types-track flex gap-[14px] animate-[marquee_22s_linear_infinite] w-max" id="typesTrack"></div>
-    </div>
+    <!--Skill, Experience, Education-->
+    <section class="flex flex-col md:flex-row gap-4 mt-4 second-section">
 
-    <!-- ABOUT -->
-    <section id="about" class="about-section bg-[var(--surface)] px-5 py-[64px] bp900:px-[40px] bp900:py-[100px]">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Bio</span>
-        <h2 class="section-title reveal">ABOUT <em>ME</em></h2>
+        <div class="flex flex-col w-full md:w-4/6 gap-4">
+            <div class="flex flex-col gap-2 flex-1 rounded-lg p-4 fade-up delay-200 about-me-section">
 
-        <p class="reveal text-justify text-sm" style="color: var(--gray); max-width: 480px; line-height: 1.7">
-          Every trainer has their own story and journey. This section introduces Jerome, his background, passions, and experiences as a developer and creator.
-        </p>
+                <div class="flex items-center gap-2 mr-5">
+                    <i class="fas fa-globe-asia" style="color: rgb(230, 168, 215);"></i>
+                    <h2 class="text-lg font-bold div-title">Hello, World</h2>
+                </div>  
 
-        <div class="exp-layout reveal flex flex-col md:flex-row gap-[28px] mt-[50px] items-start">
-          <!-- LEFT: PROFILE -->
-          <div class="bio-card reveal w-full md:w-1/2 project-card">
-            <div class="profile-card reveal">
-              <div class="profile-name mb-8">DEVELOPER‘S CARD</div>
-              <div class="w-[110px] h-[110px] rounded-full overflow-hidden bg-[linear-gradient(135deg,_#C9A07A,_#D4AA7D)] mx-auto mb-[16px] border-[3px] border-[var(--pink)] shadow-[0_0_24px_var(--pink-glow)]">
-                <img
-                  src="./assets/Image.jfif"
-                  alt="Jerome Profile Picture"
-                  class="w-full h-full object-cover"
-                />
-              </div>
+                <p class="text-justify paragraph-text">
+                    I’m an IT student who sees technology as a runway. I turn ideas into interfaces that are functional, intuitive, and visually captivating. Bold, curious, and unstoppable, I’m always learning, experimenting, and leveling up.
+                    <br> <br>
+                    Away from the screen, you’ll find me with iced matcha in hand, immersed in a good book or binge-watching the latest series. These moments recharge my creativity and sharpen my problem-solving skills.
+                    <br> <br>
+                    And yes, I live by Elle Woods' iconic motto: <span class = "div-title"><i>"What, like it's hard?"</i></span> — a reminder that every challenge is another chance to shine. With creativity, determination, and a touch of <span class = "div-title"><i>glamour</i></span>, I embrace technology as both discipline and art.
+                </p>
+    
+            </div>
 
-              <div class="profile-name">JEROME <span>BAGO</span></div>
-              <div class="profile-handle">@seasunreo</div>
+            <div class="flex flex-col gap-2 flex-1 bg-white-100 rounded-lg p-4 fade-up delay-300 tech-stack-section">
+                <!-- Header -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2 mr-5">
+                        <i class="fas fa-code" style="color: rgb(230, 168, 215);"></i>
+                        <h2 class="text-lg font-bold div-title">Tech Stack</h2>
+                    </div>  
 
-              <p
-                class="text-[12px] text-[var(--gray)] mt-[10px] leading-[1.6] text-center"
-              >
-                An Information Technology student with a strong interest in
-                full-stack development and building user-centered digital
-                experiences—ranging from dynamic web applications to
-                well-crafted websites.
-              </p>
+                    <a href="./additional_src/tech_stack.html" class="text-xs text-foreground/70 hover:text-foreground flex items-center gap-1 transition-colors text-white">
+                        View All
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
 
-              <div class="mt-[14px] flex gap-[8px] justify-center flex-wrap">
-                <span class="chip chip-pink">Metro Manila</span>
-                <span class="chip chip-dark">PH</span>
-              </div>
+                <!-- Content -->
+                <div class="space-y-4">
+                    <!-- Frontend -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Frontend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">HTML</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">CSS</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">JavaScript</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">JQuery</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">Bootstrap</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">Tailwind CSS</p>
+                        </div>
+                    </div>
 
-              <div class="contact-btns mt-[20px] flex flex-col gap-[10px] text-xs font-light">
-                <a
-                  href="mailto:jeromebago17@gmail.com"
-                  class="contact-btn contact-btn-primary w-full flex justify-between items-center"
-                >
-                  <span class = "flex items-center gap-5"><i class="fas fa-envelope"></i> Email Me</span>
+                    <!-- Backend -->
+                    <div>
+                    <h3 class="text-sm font-semibold mb-2 text-white">Backend</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">C#</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">PHP</p>
+                            <p class="inline-flex px-3 py-1 text-xs font-medium div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">SQL</p>
+                        </div>
+                    </div>
+
+                    <!-- Designing -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Database</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">MySQL</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">myPhpAdmin</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">SQL</span>
+                            <span class="inline-flex px-3 py-1 text-xs font-medium rounded-lg div-text shadow-[0_1px_1px_rgba(0,0,0,0.03)] tech-stack-boxes">XAMPP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="flex flex-col flex-1 rounded-lg p-4 fade-up delay-400 projects-section gap-2">
+                    <!-- Header -->
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2 mr-5">
+                            <i class="fas fa-folder-open" style="color: rgb(230, 168, 215);"></i>
+                            <h2 class="text-lg font-bold div-title">Recent Projects</h2> 
+                        </div>
+
+                        <a href="./additional_src/projects.html" class="text-xs text-foreground/70 hover:text-foreground flex items-center gap-1 transition-colors text-white">
+                            View All
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex flex-col md:flex-row gap-4">
+
+                        <div class = "flex flex-col w-full md:w-3/6 gap-4">
+                            <div class = space-y-2>
+
+                            <button data-id="1" class="project-boxes flex items-center w-full p-2 gap-2 cert-project-boxes badge cursor-pointer">
+                                <i class="fas fa-paw" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-sm text-white font-medium ml-2">PawPatrol: Pet Clinic</span>
+                            </button>
+                            <!-- add a new project here for col 1-->
+                            </div>
+                        </div>
+
+                        <div class = "flex flex-col w-full md:w-3/6 gap-4">
+                            <div class = space-y-2>
+
+                            <button data-id="2" class="project-boxes flex items-center w-full p-2 gap-2 cert-project-boxes badge cursor-pointer">
+                                <i class="fa-solid fa-book" style="color: rgb(230, 168, 215);"></i>
+                                <span class="text-sm text-white font-medium ml-2">Sandro's Nook</span>
+                            </button>
+                            <!-- add a new project here for col 2-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="flex flex-col w-full md:w-2/6 gap-4">
+
+            <div class="flex flex-col flex-1 h-150 rounded-lg p-4 overflow-hidden fade-up delay-100 experience-section">
+                <div class="flex flex-col gap-2 w-full">
+                    <div class="flex items-center gap-2 mr-5">
+                        <i class="fas fa-briefcase" style="color: rgb(230, 168, 215);"></i>
+                        <h2 class="text-lg font-bold div-title">Experience</h2>
+                    </div>  
+
+                    <ul>
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-[rgb(230,168,215)]" viewBox="0 0 16 16">
+                                    <circle cx="8" cy="8" r="8" />
+                                </svg>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Full-Stack Developer Intern</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Concepcion Business Services, Inc.</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2026</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-[rgb(230,168,215)]" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
+                                    </svg>
+                                </div>
+
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">BS Information Technology</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Pamantasan ng Lungsod ng Muntinlupa</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2026</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="7.25" fill="#2d1f29" stroke="rgb(230,168,215)" stroke-width="1.5" class="group-hover:fill-[rgb(230,168,215)] transition-colors duration-300"/>
+                                    </svg> 
+                                </div>
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Agent-In Cust Svc 2</p>
+                                    <p class="mt-1 text-gray-400 text-xs">ibex.</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2024</span>
+                            </div>
+                        </li>
+
+                        <li class="relative flex items-baseline gap-6 pb-5">
+                            <div>
+                                <div class = "relative group">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="7.25" fill="#2d1f29" stroke="rgb(230,168,215)" stroke-width="1.5" class="group-hover:fill-[rgb(230,168,215)] transition-colors duration-300"/>
+                                    </svg> 
+                                </div>
+                                <div class="before:content-[''] before:absolute before:left-[5.5px] before:h before:w-[1px] before:bg-[rgb(230,168,215)]"></div>
+                            </div>
+
+                            <div class="flex-1 flex justify-between items-baseline">
+                                <div>
+                                    <p class="text-sm text-white font-medium">Hello, World!</p>
+                                    <p class="mt-1 text-gray-400 text-xs">Wrote my First Code</p>
+                                </div>
+
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2022</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 flex-1 rounded-lg p-4 academic-section fade-up delay-200 shadow-sm">
+                <div class="flex items-center gap-2 mr-5">
+                    <i class="fas fa-graduation-cap" style="color: rgb(230, 168, 215);"></i>
+                    <h2 class="text-lg font-bold div-title">Academic</h2>
+                </div>  
+
+                    <div class="space-y-6">
+                        <!-- COLLEGE -->
+                        <div>
+                            <!-- Title + Year -->
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-sm text-white font-medium">BS Information Technology</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2022 – Present</span>
+                            </div>
+
+                            <p class="mt-1 text-gray-400 text-xs mt-1">Pamantasan ng Lungsod ng Muntinlupa</p>
+                        </div>
+
+                        <!-- SENIOR HIGH -->
+                        <div>
+                            <!-- Title + Year -->
+                            <div class="flex justify-between items-baseline">
+                                <p class="text-sm text-white font-medium">Science, Technology, Engineering, and Mathematics (S.T.E.M)</p>
+                                <span class="text-xs text-gray-400 whitespace-nowrap">2020 – 2022</span>
+                            </div>
+
+                            <p class="mt-1 text-gray-400 text-xs mt-1">Muntinlupa National High School</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Certificates and Leadership-->
+    <section class = "flex flex-col md:flex-row gap-4 mt-4">
+
+        <div class = " flex flex-col w-full md:w-3/6 gap-2 rounded-lg Leadership-section p-4 fade-up delay-100">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-user-tie" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Leadership & Roles</h2>
+            </div>  
+
+            <ul class="space-y-2 text-sm">
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">College Student Council Secretary</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2025 – Present</span>
+                </li>
+
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">Class Representative</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2023 – Present</span>
+                </li>
+
+                <li class="flex items-start justify-between">
+                    <div class="flex items-start gap-2">
+                        <span class="w-2 h-2 bg-[rgb(230,168,215)] rounded-full mt-2"></span>
+
+                        <div class="flex flex-col">
+                            <span class="text-sm text-white font-medium">College Student Council Business Manager 1</span>
+                            <span class="text-xs text-gray-400">Pamantasan ng Lungsod ng Muntinlupa</span>
+                        </div>
+                    </div>
+
+                    <span class="text-xs text-gray-400 whitespace-nowrap">2024 – 2025</span>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class = "flex flex-col w-full md:w-3/6 gap-2 rounded-lg Certificates-section p-4 fade-up delay-200">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-certificate" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Certificates</h2>
+            </div>  
+
+            <div class ="space-y-2 text-sm">
+
+                <a href = "./assets/Certificate from Y4LS 2025 (signature hidden for privacy).png" target="_blank" class="flex items-start gap-2 ">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Y4LS 2025: The Builders and Shapers of a New, AI-Integrated World</span>
+                        <span class="text-xs text-gray-400">Issued by John Clements Consultants, Inc.</span>
+                    </div>
                 </a>
 
-                <a
-                  href="https://www.linkedin.com/in/jeromebago/"
-                  target="_blank"
-                  class="contact-btn contact-btn-secondary w-full flex justify-between items-center"
-                >
-                  <span class = "flex items-center gap-5"><i class="fab fa-linkedin"></i> LinkedIn</span>
+            </div>
+        </div>
+    </section>
+
+    <!--Statistics and Contacs-->
+    <section class = "flex flex-col md:flex-row gap-4 mb-8 mt-4">
+
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg statistics-section p-4 fade-up delay-300">
+            <!-- Header -->
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-chart-line" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Statistics</h2>
+            </div>  
+            <!-- content -->
+            <div class="flex flex-col md:flex-row w-full gap-4">
+
+                <div class="flex flex-row w-full gap-4">
+                    <div class="flex flex-col w-1/4 gap-4">
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <h1 class="text-sm text-gray-400 font-base">1+</h1>
+                            </li>
+                            <li class="flex items-start">
+                                <h1 class="text-sm text-gray-400 font-base">1.1K+</h1>
+                            </li>
+                            <li class="flex items-start">
+                                <h1 class="text-sm text-gray-400 font-base">500K+</h1>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col w-3/4 gap-4">
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-sm text-white">Projects</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-sm text-white">Cups of Iced Matcha</span>
+                            </li>
+                            <li class="flex items-start">
+                                <h1 class="text-sm text-white font-base">Lines of Code</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg socials-section p-4 fade-up delay-400">
+            <div class="flex items-center gap-2 mr-5">
+                <i class="fas fa-share-alt" style="color: rgb(230, 168, 215);"></i>
+                <h2 class="text-lg font-bold div-title">Socials</h2>
+            </div>  
+            <div class ="space-y-2 text-sm">
+
+                <a href = "https://www.linkedin.com/in/jeromebago/" target="_blank" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-linkedin" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">LinkedIn</span>
+                    </div>
                 </a>
 
-                <a
-                  href="./assets/Resume/Bago, Jerome_Resume.pdf" target="_blank"
-                  class="contact-btn contact-btn-secondary w-full flex justify-between items-center"
-                >
-                  <span class = "flex items-center gap-5"><i class="fas fa-download"></i> Download Resume</span>
+                <a href = "https://github.com/seasunreo" target="_blank" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-github" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">Github</span>
+                    </div>
                 </a>
-              </div>
+                <a href = "https://gitlab.com/xoxoreo" class="flex gap-2">
+                    <div class="flex flex-row w-full p-2 cert-project-boxes badge">
+                        <i class="fab fa-gitlab" style="color: rgb(230, 168, 215);"></i>
+                        <span class="text-xs text-white font-medium ml-2">GitLab</span>
+                    </div>
+                </a>
+
             </div>
-          </div>
-
-          <!-- RIGHT: STACKED SECTION -->
-          <div class="w-full md:w-1/2 flex flex-col gap-[28px]">
-            <!-- DIGITAL TRAINER (TOP) -->
-            <div class="bio-card reveal project-card">
-              <h3>
-                <i class="fas fa-globe-asia"></i>About Me
-              </h3>
-              <p
-                class="text-[#F8F0F2] mb-[14px] leading-[1.6] text-justify text-sm"
-              >
-                I’m an Information Technology student who sees technology as a runway. I turn ideas into interfaces that are functional, intuitive, and visually captivating. Bold, curious, and unstoppable, I’m always learning, experimenting, and leveling up.
-              </p>
-              <p class="text-[#F8F0F2] mb-[14px] leading-[1.6] text-justify text-sm">
-                Away from the screen, you’ll find me with iced matcha in hand, immersed in a good book or binge-watching the latest series.These moments recharge my creativity and sharpen my problem-solving skills.
-              </p>
-              <p class="text-[#F8F0F2] mb-[14px] leading-[1.6] text-justify text-sm">
-                And, I live by Elle Woods' iconic motto: <em>"What, like it's hard?"</em> — a reminder that everychallenge is another chance to shine. With creativity,determination, and a touch of <em>glamour</em>, I embracetechnology as both discipline and art.
-              </p>
-            </div>
-
-            <!-- ACADEMIC (BOTTOM) -->
-            <div class="bio-card reveal project-card">
-              <h3 class="div-title">
-                <i class="fas fa-graduation-cap"></i> Academic
-              </h3>
-
-              <div class="flex justify-between items-start mb-[14px]">
-                <div>
-                  <p class="text-sm font-[600] text-[var(--white)]">
-                    BS Information Technology
-                  </p>
-                  <p class="text-[13px] text-[var(--gray)] mt-[3px]">
-                    Pamantasan ng Lungsod ng Muntinlupa
-                  </p>
-                </div>
-                <span
-                  class="text-[12px] text-[var(--pink)] font-[700] whitespace-nowrap"
-                  >Present</span
-                >
-              </div>
-
-              <div class="flex justify-between items-start">
-                <div>
-                  <p class="text-sm font-[600] text-[var(--white)]">
-                    Science, Technology, Engineering,<br />
-                    and Mathematics (STEM)
-                  </p>
-                  <p class="text-[13px] text-[var(--gray)] mt-[3px]">
-                    Muntinlupa National High School
-                  </p>
-                </div>
-                <span
-                  class="text-[12px] text-[var(--pink)] font-[700] whitespace-nowrap"
-                  >2022</span
-                >
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills-section">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Battle Kit</span>
-        <h2 class="section-title reveal">TECH <em>STACK</em></h2>
-        <p style="color: var(--gray); max-width: 480px; line-height: 1.7" class="reveal text-justify text-sm">
-          Every great trainer chooses the right tools for every battle. These are the technologies and skills he uses to overcome challenges, fix bugs, and build amazing projects.
-        </p>
+        <div class = "flex flex-col w-full md:w-2/6 gap-2 rounded-lg additional-section p-4 fade-up delay-500">
+            <div class ="space-y-2 text-sm">
 
-        <!-- Skills Layout: Tabs Left, Track Right -->
-        <div class="flex flex-col md:flex-row gap-[60px] mt-[50px] items-start">
-          <!-- Tab nav - Left Side, Vertical -->
-          <div
-            class="carousel-nav reveal flex flex-col w-full md:w-1/3 md:static mt-2 md:mt-0"
-          >
-            <div class="skill-select-wrap block md:hidden px-[20px] py-[18px]">
-              <label
-                for="skillDropdown"
-                class="skill-select-label text-lg"
-              >
-                Choose a Skill
-              </label>
-              <select
-                id="skillDropdown"
-                class="skill-select w-full rounded-[24px] border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.05)] text-[var(--white)] px-[16px] py-[16px] text-[14px]"
-              ></select>
+                <a href = "mailto:bjeromebago17@gmail.com" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Send me an email</span>
+                        <span class="text-xs text-gray-400">jeromebago17@gmail.com</span>
+                    </div>
+                </a>
+                
+                <a href = "https://www.linkedin.com/in/jeromebago/" target="_blank" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">More About Me</span>
+                        <span class="text-xs text-gray-400">linkedin.com/in/jeromebago</span>
+                    </div>
+                </a>
+
+                <a href = "./assets/Resume/Resume_Jerome Bago.pdf" target="_blank" class="flex items-start gap-2">
+                    <div class="flex flex-col w-full p-2 cert-project-boxes badge">
+                        <span class="text-xs text-white font-medium">Read more About Me</span>
+                        <span class="text-xs text-gray-400">Download my Resume</span>
+                    </div>
+                </a>
+
             </div>
-            <div
-              id="skillTabs"
-              class="skill-tab-list hidden md:flex flex-col gap-[10px] w-full"
-            ></div>
-          </div>
-
-          <!-- Carousel - Right Side -->
-          <div class="w-full md:w-2/3">
-            <!-- Label -->
-            <span class="skill-tag reveal" id="skillLabel"></span>
-
-            <!-- Carousel -->
-            <div class="carousel-track-wrap reveal">
-              <div class="carousel-track" id="skillTrack"></div>
-            </div>
-
-            <!-- Dots - Bottom -->
-            <div class="carousel-dots reveal flex justify-center mt-[40px]" id="skillDots"></div>
-          </div>
+            
         </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects-section">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Legendary Encounters</span>
-        <h2 class="section-title reveal">MY <em>PROJECTS</em></h2>
-        <p
-          style="color: var(--gray); max-width: 480px; line-height: 1.7"
-          class="reveal text-justify text-sm"
-        >
-          Every successful journey is built through hard work and creativity. These are some of the projects he proudly created and continues to improve.
-        </p>
-
-        <div class="proj-carousel-wrap reveal">
-          <div class="proj-carousel-viewport">
-            <div class="proj-carousel-track" id="projTrack"></div>
-          </div>
-
-          <!-- Controls -->
-          <div class="proj-carousel-controls">
-            <button class="proj-arrow-btn" id="projPrev" disabled>
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-              "
-            >
-              <div class="proj-dots" id="projDots">
-                <div class="proj-dot active" data-pair="0"></div>
-                <div class="proj-dot" data-pair="1"></div>
-              </div>
-              <div class="proj-counter">
-                Showing <span id="projCurrent">1–2</span> of
-                <span id="projTotal">4</span>
-              </div>
-            </div>
-            <button class="proj-arrow-btn" id="projNext">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+    <!--Footer-->
+    <section class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8 mt-4 footer-section">
+        <div class="flex flex-row items-center justify-center gap-2 mr-5 mt-5">
+            <p class="text-sm text-gray-400"> &copy; 2026 Jerome Bago. All rights reserved.</p>
+        </div>  
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="experience-section">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Journey</span>
-        <h2 class="section-title reveal">MY <em>EXPERIENCE</em></h2>
-        <p style="color: var(--gray); max-width: 480px; line-height: 1.7" class="reveal text-justify text-sm">
-          Every trainer grows stronger through experience. This section highlights the roles, lessons, and skills he gained throughout his journey.
-        </p>
+    <!--Modal for Recent Projects-->
+    <dialog id="dialog" class="p-0 rounded-xl">
+        <div class="fixed inset-0 flex items-center justify-center bg-black/60 p-4">
 
-        <div class="exp-layout reveal flex flex-col md:flex-row gap-[170px] mt-[50px] items-start">
-          <!-- LEFT: Timeline -->
-          <div class="timeline w-full md:w-1/3" id="expTimeline"></div>
+            <div id="modal-panel" class="relative w-[100vh] max-w-2xl h-[500px] max-h-[90vh] rounded-xl overflow-hidden shadow-2xl bg-cover bg-center flex items-center justify-center modal-control">
+                <div class="absolute inset-0 modal-overlay"></div>
 
-          <!-- RIGHT: Details -->
-          <div class="exp-detail w-full md:w-2/3 project-card" id="expDetail">
-            <div class="exp-detail-empty" id="expEmpty">
-              <i class="fas fa-hand-pointer"></i>
-              <p class="color: var(--gray); mb-[14px] leading-[1.6] text-center text-sm">
-                Click a role on the timeline to see details and skills learned.
-              </p>
+                    <button id="modal-close" onclick="closeModal()" class="absolute top-4 right-4 z-20 px-4 py-2 text-xl">
+                        <i class="fa-solid fa-xmark" style="color: rgb(230, 168, 215);"></i>
+                    </button>
+
+                    <div class="flex flex-col z-10 text-center justify-center p-6 text-white h-full w-full">
+                        <div class ="flex flex-col items-center justify-center gap-2 modal-content">
+                            <h3 id="dialog-title" class="text-2xl font-bold div-title"></h3>
+                            <p id="dialog-desc" class="mt-2 text-base text-white/80 text-center px-24"></p>
+
+                            <a id="github-btn" target="_blank" rel="noopener noreferrer" class="mt-6 px-4 py-2 rounded-md">
+
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Check on GitHub</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </dialog>
 
-    <!-- STATS -->
-    <section class="stats-section">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Stats</span>
-        <h2 class="section-title reveal">BY THE <em>NUMBERS</em></h2>
+</div>
 
-        <div
-          class="stats-grid reveal flex flex-col md:flex-row gap-[24px] mt-[50px]"
-        >
-          <div class="stat-card w-full md:w-1/3 flex items-center justify-center flex-col project-card">
-            <div class="stat-num">1+</div>
-            <div class="stat-label">Projects Deployed</div>
-          </div>
-          <div class="stat-card w-full md:w-1/3 flex items-center justify-center flex-col project-card">
-            <div class="stat-num">1.1K+</div>
-            <div class="stat-label">Cups of Iced Matcha</div>
-          </div>
-          <div class="stat-card w-full md:w-1/3 flex items-center justify-center flex-col project-card">
-            <div class="stat-num">500K+</div>
-            <div class="stat-label">Lines of Code Written</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MISC: Leadership, Certs, Socials -->
-    <section id="contact" class="misc-section">
-      <div class="page-wrap">
-        <span class="section-tag reveal">— Developer‘s Record</span>
-        <h2 class="section-title reveal">BADGES & <em>HONORS</em></h2>
-        <p
-          style="color: var(--gray); max-width: 480px; line-height: 1.7"
-          class="reveal text-justify text-sm"
-        >
-          Every trainer develops their own leadership style and connections. Here are his leadership experiences, certifications, and social platforms where people can connect with him.
-        </p>
-        <div
-          class="misc-grid reveal flex flex-col md:flex-row gap-[24px] mt-[50px]"
-        >
-          <!-- Leadership -->
-          <div class="misc-card w-full md:w-1/3">
-            <div class="misc-head">
-              <i class="fas fa-user-tie"></i>
-              <h3 class="div-title">Leadership</h3>
-            </div>
-            <div class="misc-item">
-              <div class="misc-item-left">
-                <p>CSC Secretary</p>
-                <span>Pamantasan ng Lungsod ng Muntinlupa</span>
-              </div>
-              <div class="misc-item-right">2025 – Now</div>
-            </div>
-            <div class="misc-item">
-              <div class="misc-item-left">
-                <p>Class Representative</p>
-                <span>Pamantasan ng Lungsod ng Muntinlupa</span>
-              </div>
-              <div class="misc-item-right">2023 – Now</div>
-            </div>
-            <div class="misc-item">
-              <div class="misc-item-left">
-                <p>CSC Business Manager 1</p>
-                <span>Pamantasan ng Lungsod ng Muntinlupa</span>
-              </div>
-              <div class="misc-item-right">2024 – 2025</div>
-            </div>
-          </div>
-
-          <!-- Certificates -->
-          <div class="misc-card w-full md:w-1/3">
-            <div class="misc-head">
-              <i class="fas fa-certificate"></i>
-              <h3 class="div-title">Certificates</h3>
-            </div>
-            <a href="./assets/Certificate from Y4LS 2025 (signature hidden for privacy).png" target="_blank" style="text-decoration: none">
-              <div class="misc-item-cert" style="cursor: none">
-                <div class="misc-item-left">
-                  <p>
-                    Y4LS 2025: The Builders and Shapers of a New, AI-Integrated
-                    World
-                  </p>
-                  <span>John Clements Consultants, Inc.</span>
-                </div>
-                <div class="misc-item-right">
-                  <i
-                    class="fas fa-external-link-alt"
-                    style="font-size: 10px"
-                  ></i>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Socials -->
-          <div class="misc-card w-full md:w-1/3">
-            <div class="misc-head">
-              <i class="fas fa-share-alt"></i>
-              <h3 class="div-title">Socials</h3>
-            </div>
-            <a
-              href="https://www.linkedin.com/in/jeromebago/"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-linkedin"></i>LinkedIn</a
-            >
-            <a
-              href="https://github.com/seasunreo"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-github"></i>GitHub</a
-            >
-            <a
-              href="https://gitlab.com/xoxoreo"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-gitlab"></i>GitLab</a
-            >
-            <a href="mailto:jeromebago17@gmail.com" class="social-link"
-              ><i class="fas fa-envelope"></i>jeromebago17@gmail.com</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer
-      class="bg-[var(--card-bg)] border-t border-[var(--border)] py-[60px] px-[40px] text-center"
-    >
-      <div class="footer-logo">xoxo<span>.reo</span></div>
-      <p class="footer-sub">
-        An IT student fueled by iced matcha and caffeine. Fixing bugs, refining ideas, and building projects one commit at a time.
-      </p>
-      <div class="flex flex-wrap justify-center gap-[12px]">
-        <span class="chip chip-pink">Information Technology Student</span>
-        <span class="chip chip-pink">Developer</span>
-      </div>
-      <p class="footer-disc">© 2026 Jerome Bago. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
