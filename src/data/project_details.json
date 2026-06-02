@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "Sandro's Nook: Book and Cafe Store",
+      "year": "2024",
+      "icon": "fa-solid fa-book-open-reader",
+      "color": "rgb(230, 168, 215)",
+      "description": "A smart café-bookstore app with book browsing, QR ordering, and inventory management in a seamless, cozy UI.",
+      "tech": ["JavaScript", "PHP", "MySQL", "HTML", "CSS", "Responsive", "Internet of Things", "VS Studio Code", "XAMPP", "phpMyAdmin", "GitHub"],
+      "link": "https://github.com/jrmbg/PawPatrol-Pet-Clinic"
+    },
+    {
+      "title": "Chapter Notes",
+      "year": "2024",
+      "icon": "fa-solid fa-book-bookmark",
+      "color": "rgb(230, 168, 215)",
+      "description": "A Java-based mobile app for tracking reading lists, completed books, and ratings through a simple, organized interface.",
+      "tech": ["HTML", "Tailwind CSS", "Responsive"],
+      "link": "https://github.com/jrmbg/Portfolio-Website"
+    }
+  ]
+}

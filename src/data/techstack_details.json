@@ -1,0 +1,16 @@
+{
+  "stacks": [
+    {
+      "category": "Frontend",
+      "items": ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "Tailwind CSS"]
+    },
+    {
+      "category": "Backend",
+      "items": ["C#", "PHP", "SQL"]
+    },
+    {
+      "category": "Database",
+      "items": ["MySQL", "phpMyAdmin", "SQL", "XAMPP"]
+    }
+  ]
+}
