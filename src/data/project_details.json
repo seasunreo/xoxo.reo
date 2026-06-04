@@ -2,21 +2,39 @@
   "projects": [
     {
       "title": "Sandro's Nook: Book and Cafe Store",
-      "year": "2024",
+      "year": "2026",
       "icon": "fa-solid fa-book-open-reader",
       "color": "rgb(230, 168, 215)",
-      "description": "A smart café-bookstore app with book browsing, QR ordering, and inventory management in a seamless, cozy UI.",
-      "tech": ["JavaScript", "PHP", "MySQL", "HTML", "CSS", "Responsive", "Internet of Things", "VS Studio Code", "XAMPP", "phpMyAdmin", "GitHub"],
-      "link": "https://github.com/jrmbg/PawPatrol-Pet-Clinic"
+      "description": "Internet of Things-Integrated Smart Transaction Processing System for Café and Bookstore",
+      "tech": ["JavaScript", "PHP", "MySQL", "HTML", "CSS", "Internet of Things"],
+      "link": "https://github.com/seasunreo/Sandro-s-Nook-Book-and-Cafe-Store"
     },
     {
       "title": "Chapter Notes",
-      "year": "2024",
+      "year": "2023",
       "icon": "fa-solid fa-book-bookmark",
       "color": "rgb(230, 168, 215)",
-      "description": "A Java-based mobile app for tracking reading lists, completed books, and ratings through a simple, organized interface.",
+      "description": "A mobile app that helps readers track their reading, manage book, and rate books through a simple and user-friendly interface.",
+      "tech": ["Java", "XML", "SQLite", "Android Studio"],
+      "link": "https://github.com/seasunreo/Chapter-Notes"
+    },
+    {
+      "title": "Paw Patrol Pet Clinic",
+      "year": "2023",
+      "icon": "fa-solid fa-paw",
+      "color": "rgb(230, 168, 215)",
+      "description": "A responsive landing page built with HTML and CSS that showcases an online appointment system for pet clinics, making pet care more convenient and accessible for pet owners.",
       "tech": ["HTML", "Tailwind CSS", "Responsive"],
-      "link": "https://github.com/jrmbg/Portfolio-Website"
+      "link": "https://github.com/seasunreo/PawPatrol-Pet-Clinic"
+    },
+    {
+      "title": "Midnight Coffee",
+      "year": "2022",
+      "icon": "fa-solid fa-moon",
+      "color": "rgb(230, 168, 215)",
+      "description": "A responsive front-end website that presents menu items, shop information, and interactive user features through a clean and visually engaging interface.",
+      "tech": ["HTML", "CSS", "Responsive"],
+      "link": "https://github.com/seasunreo/Midnight-Coffee"
     }
   ]
 }

@@ -293,6 +293,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
@@ -371,6 +374,9 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -379,6 +385,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -457,18 +466,8 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-\[rgba\(230\,168\,215\,0\.3\)\] {
-    border-color: rgba(230,168,215,0.3);
-  }
   .bg-\[rgb\(230\,168\,215\)\] {
     background-color: rgb(230,168,215);
-  }
-  .bg-\[rgba\(230\,168\,215\,0\.08\)\] {
-    background-color: rgba(230,168,215,0.08);
   }
   .bg-black\/60 {
     background-color: color-mix(in srgb, #000 60%, transparent);
@@ -529,6 +528,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .pr-16 {
+    padding-right: calc(var(--spacing) * 16);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -741,6 +743,11 @@
   .md\:w-40 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
@@ -986,11 +993,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -1092,7 +1094,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
-      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;

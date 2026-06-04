@@ -17,10 +17,12 @@ fetch('./data/experience_details.json')
         ? `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle-fill fill-[rgb(230,168,215)]" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
             </svg>`
-        : `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+        : `<div class = "group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
             <circle cx="8" cy="8" r="7.25" fill="#2d1f29" stroke="rgb(230,168,215)" stroke-width="1.5"
                 class="group-hover:fill-[rgb(230,168,215)] transition-colors duration-300"/>
-            </svg>`;
+            </svg>
+        </div>`;
 
     const li = document.createElement('li');
     li.className = 'relative flex items-start gap-6 pb-5';
@@ -52,7 +54,6 @@ fetch('./data/experience_details.json')
             <div>
                 <p class="text-sm text-white font-medium">${exp.title}</p>
                 <p class="mt-1 text-gray-400 text-xs font-medium">${exp.org}</p>
-                <p class="mt-2 text-xs text-gray-400">${exp.period} &nbsp;·&nbsp; ${exp.duration}</p>
             </div>
             <div class="flex items-center gap-2 ml-4">
                 <span class="text-xs text-gray-400 whitespace-nowrap">${exp.year_ended}</span>
@@ -69,8 +70,8 @@ fetch('./data/experience_details.json')
         </div>
 
         <div id="panel-${i}" class="overflow-hidden transition-all duration-300 max-h-0 mt-2">
-            <!--<p class="mt-2 text-xs text-gray-400">${exp.period} &nbsp;·&nbsp; ${exp.duration}</p>-->
-            <ul class="mt-1 flex flex-col gap-1">
+            <p class="mt-2 text-xs text-gray-400">${exp.period} &nbsp;·&nbsp; ${exp.duration}</p>
+            <ul class="mt-1 flex flex-col gap-1 pr-16 text-justify">
                 ${(Array.isArray(exp.description) ? exp.description : [exp.description]).map(point => `
                     <li class="text-sm text-white leading-relaxed flex items-start gap-2 ">
                         <span style="margin-top: 10px; flex-shrink: 0; width: 4px; height: 4px; border-radius: 50%; background-color: rgb(230, 168, 215); display: inline-block;"></span>

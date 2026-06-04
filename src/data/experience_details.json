@@ -9,13 +9,9 @@
     "duration": "6 mos",
     "icon": "fas fa-building",
     "description": [
-    "As an Application Developer Intern, I helped the team develop applications used in daily operations, contributing to improved efficiency and reduced support tickets.",
-
-    "Revamped legacy systems and contributed to the maintenance and enhancement of existing web applications, collaborating with the team to optimize user experience and streamline workflows.",
-
-    "Assisted in developing both front-end and back-end components; built a new application with enhanced features using HTML, CSS, JavaScript, .NET, and MS SQL to deliver efficient web solutions.",
-
-    "Completed 500 hours of hands-on full-stack web development internship experience, adapting to modern development practices and continuously expanding technical skills."
+    "Developed internal applications that improved efficiency and reduced support requests.",
+    "Enhanced and maintained legacy web applications to improve user experience and workflows.",
+    "Built full-stack web application features using HTML, CSS, JavaScript, C#, .NET, and MS SQL."
   ],
     "skillsLabel": "Skills Gained",
     "skills": ["Full-Stack Development", "Web Development", "HTML", "CSS", "JavaScript", ".NET Framework", "ASP.NET MVC", "C#", "Git", "Bootstrap", "Microsoft SQL Server", "Front-End Development", "Back-End Development", "SQL", "Communication & Team Collaboration"],
@@ -31,13 +27,9 @@
     "duration": "3 yrs 6 mos",
     "icon": "fas fa-university",
     "description": [
-    "Completed a 4-year Bachelor of Science in Information Technology program",
-
-    "Engaged in coursework covering algorithms, database systems, web development, software development, systems design, and system architecture.",
-
-    "Developed a capstone project titled Sandro’s Nook, an IoT-integrated smart transaction system for a café and bookstore, applying full-stack development and system design in a real-world scenario.",
-
-    "Actively involved in student leadership as a member of the college student council, contributing to organizational activities and collaborative initiatives within the academic community."
+    "Built a foundation in algorithms, database systems, web development, and software architecture.",
+    "Led the development of Sandro's Nook, an IoT-integrated smart transaction system for a café and bookstore.",
+    "Contributed to student leadership and campus initiatives as a College Student Council member."
   ],
     "skillsLabel": "Skills Gained",
     "skills": ["Algorithms", "Data Structures", "Web Development", "Database Design", "Systems Analysis", "OOP", "Networking", "Technical Writing", "Teamwork & Leadership"],
@@ -53,13 +45,9 @@
     "duration": "8 mos",
     "icon": "fas fa-headset",
     "description": [
-    "As a Customer Service Representative, I handled inbound chats and calls to resolve customer concerns related to online and in-store purchases, efficiently multitasking by addressing issues and completing accurate documentation in real time.",
-
-    "Resolved customer concerns within an average handling time of five to six minutes per contact while maintaining accuracy and service quality.",
-
-    "Documented customer interactions, concerns, and resolutions using multiple tools, ensuring accuracy and completeness in real time.",
-
-    "Consistently met performance targets by maximizing available resources to improve efficiency and deliver high levels of customer satisfaction."
+    "Resolved customer concerns through chat and phone support for online and in-store purchases.",
+    "Maintained a 5–6 minute average handling time while ensuring accurate documentation.",
+    "Consistently achieved performance targets and high customer satisfaction ratings."
   ],
     "skillsLabel": "Skills Gained",
     "skills": ["Effective Communication (Chat & Voice)", "Problem Solving", "Accurate Documentation & CRM Tools", "Multitasking & Time Management", "Client Relations", "Customer Satisfaction"],

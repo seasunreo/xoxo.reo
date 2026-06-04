@@ -1,6 +1,8 @@
-﻿let projects = [];
+﻿document.getElementById("year").textContent = new Date().getFullYear();
 
-fetch('projects-data/project_details.json')
+let projects = [];
+
+fetch('./data/project_details.json')
   .then(res => res.json())
   .then(data => {
     projects = data;
